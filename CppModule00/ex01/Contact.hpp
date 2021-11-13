@@ -1,9 +1,7 @@
-#ifndef CONTACT_H
-# define CONTACT_H
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
 
-# include <iostream>
-# include <string>
-# include <cstring>
+#include "Header.hpp"
 
 class Contact
 {
@@ -13,6 +11,9 @@ class Contact
 		std::string nickname;
 		std::string phoneNumber;
 		std::string darkestSecret;
+		void	print(Contact contact);
+		void	printParam(std::string str);
+		void	printInfo(Contact contact);
 };
 
 #endif

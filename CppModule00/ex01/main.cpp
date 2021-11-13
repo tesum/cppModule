@@ -7,16 +7,17 @@ int	main()
 
 	while (1)
 	{
-		std::cout << "Input command (add/search/exit):" << std::endl;
-		getline(std::cin, cmd, '\n');
-		if (cmd == "add")
+		std::cout << "Input command (ADD/SEARCH/EXIT):" << std::endl;
+		if (!(getline(std::cin, cmd, '\n')))
+			return 0;
+		if (cmd == "ADD")
 			phoneBook.add();
-		else if (cmd == "search")
+		else if (cmd == "SEARCH")
 			phoneBook.search();
-		else if (cmd == "exit")
+		else if (cmd == "EXIT")
 			exit(0);
 		else
-			std::cout << "Invalid command! Please enter (add/search/exit)." << std::endl;
+			std::cout << "Invalid command! Please enter (ADD/SEARCH/EXIT)." << std::endl;
 	}
 	return (0);
 }

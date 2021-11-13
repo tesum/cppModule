@@ -1,10 +1,7 @@
-#ifndef PHONEBOOK_H
-# define PHONEBOOK_H
+#ifndef PHONEBOOK_HPP
+# define PHONEBOOK_HPP
 
-# include <iostream>
-# include <string>
-# include <cstring>
-# include <iomanip>  
+# include "Header.hpp"
 # include "Contact.hpp"
 
 class PhoneBook
@@ -14,12 +11,10 @@ class PhoneBook
 		size_t	size;
 		size_t	index;
 	public:
-		PhoneBook(/* args */);
+		PhoneBook();
+		~PhoneBook();
 		void	add();
 		void	search();
-		void	print(Contact contact);
-		void	printParam(std::string str);
-		void	printInfo(Contact contact);
 };
 
 #endif

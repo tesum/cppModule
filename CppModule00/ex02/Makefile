@@ -1,10 +1,10 @@
-NAME	=	phonebook
+NAME	=	test
 
-SRCS	=	main.cpp Contact.cpp PhoneBook.cpp 
+SRCS	=	tests.cpp Account.cpp
 
-HDRS	=	Header.hpp Contact.hpp	PhoneBook.hpp
+HDRS	=	Account.hpp
 
-FLAGS	=	-Wall -Wextra -Werror -I. -std=c++98
+FLAGS	=	-Wall -Wextra -Werror -I.
 
 OBJ		=	$(SRCS:.cpp=.o)
 
