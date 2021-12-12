@@ -1,4 +1,5 @@
-#pragma once
+#ifndef AMATERIA_HPP
+#define AMATERIA_HPP
 
 #include <iostream>
 #include <string>
@@ -16,8 +17,10 @@ class AMateria
 		AMateria &operator=(const AMateria &raw);
 		virtual ~AMateria();
 
-		std::string const & getType() const;
+		std::string const &getType() const;
 
 		virtual AMateria *clone() const = 0;
 		virtual void use(ICharacter &target);
 };
+
+#endif

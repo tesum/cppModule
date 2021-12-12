@@ -1,10 +1,10 @@
 NAME	=	test
 
-SRCS	=	main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
+SRCS	=	main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp
 
-HDRS	=	Animal.hpp Cat.hpp Dog.hpp Brain.hpp 
+HDRS	=	AMateria.hpp Character.hpp Cure.hpp Ice.hpp MateriaSource.hpp ICharacter.hpp IMateriaSource.hpp
 
-FLAGS	=	-Wall -Wextra -Werror -I.
+FLAGS	=	-Wall -Wextra -Werror -I. -std=c++98
 
 OBJ		=	$(SRCS:.cpp=.o)
 
